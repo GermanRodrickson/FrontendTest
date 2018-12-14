@@ -1,0 +1,19 @@
+{
+  "name": "frontendtest",
+  "version": "1.0.0",
+  "description": "## GOALS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GermanRodrickson/FrontendTest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GermanRodrickson/FrontendTest/issues"
+  },
+  "homepage": "https://github.com/GermanRodrickson/FrontendTest#readme"
+}
