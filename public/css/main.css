@@ -1,6 +1,9 @@
 body {
   background-color: #F0F0F0
 }
+
+/*----------  Form  ----------*/
+
 .form-github {
   width: 350px;
   padding: 20px;
@@ -27,7 +30,12 @@ input[type=submit] {
   border: 1px solid black;
 }
 
+
+
+/*----------  Not found  ----------*/
+
 #not-found {
+  margin-top: 10px;
   display: none;
   color: #950D08;
   background-color: #F9DEDD;
@@ -36,6 +44,14 @@ input[type=submit] {
   border: 1px solid #950D08;
   border-radius: 6px;
 }
+
+/*----------  Found  ----------*/
+
+#ok {
+  display: none;
+  font-size: 15px;
+}
+
 
 #image {
   border: 1px solid black;
@@ -46,9 +62,6 @@ input[type=submit] {
   margin-top: 10px;
 }
 
-#ok {
-  font-size: 15px;
-}
 
 .description {
   display: inline-block;
@@ -61,6 +74,10 @@ input[type=submit] {
   margin: 0;
   padding: 0;
 }
+
+
+/*----------  Repositories  ----------*/
+
 
 .repositories {
   height: 170px;
