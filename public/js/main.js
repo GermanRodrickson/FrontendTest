@@ -35,20 +35,18 @@ fetch("https://api.github.com/users/KikoBeats/repos")
     return response.json();
   })
   .then(data => {
-    
-    const reponame = document.querySelector("#repo-name");
-    const stars = document.querySelector("#stars");
-    const fork = document.querySelector("#fork");
-    
     for (let i = 0; i < 5; i++) {
+      const reponame = document.querySelector("#repo-name");
+      const stars = document.querySelector("#stars");
+      const fork = document.querySelector("#fork");
       const repositories = document.querySelector("#repositories");
-      const hello = 'hello'
-      const repo = '<div class="repo"> <p id="repo-name">' + hello + '</p><div class="starts-forks"><img src="./public/img/star-solid.svg" alt="star"><p id="stars"></p><img src="./public/img/code-branch-solid.svg" alt="fork"><p id="fork"></p></div></div>';
       
-      reponame.innerHTML = data[i].name;
-      stars.innerHTML = data[i].stargazers_count;
-      fork.innerHTML = data[i].forks;
-      repositories.innerHTML = repo
+      const reponameData = (reponame.innerHTML = data[i].name);
+      const starsData = (stars.innerHTML = data[i].stargazers_count);
+      const forkData = (fork.innerHTML = data[i].forks);
+
+      const repo = '<div class="repo"> <p id="repo-name">' + reponameData + '</p><div class="starts-forks"><img src="./public/img/star-solid.svg" alt="star"><p id="stars">' + starsData + '</p><img src="./public/img/code-branch-solid.svg" alt="fork"><p id="fork">' + forkData + "</p></div></div>";
+      repositories.innerHTML += repo
       
     }
   })
