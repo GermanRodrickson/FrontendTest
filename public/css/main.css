@@ -79,7 +79,7 @@ input[type=submit] {
 /*----------  Repositories  ----------*/
 
 
-.repositories {
+#repositories {
   height: 170px;
   overflow-x: scroll;
 }
@@ -116,4 +116,8 @@ input[type=submit] {
   height: 15px;
   display: inline-block;
   margin-right: 5px;
+}
+
+#repo-name {
+  display: inline-block;
 }
