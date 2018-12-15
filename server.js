@@ -1,19 +1,14 @@
 'use strict';
 
-const http = require('http');
-const fs = require('fs')
+const express = require('express');
+const app = express();
 
-function onRequest (resquest, response) {
-  response.writeHead(200, {'Context-Type' : 'text/html'});
-  fs.readFile('./index.html', null, function (error, data) {
-    if(error) {
-      response.writeHead(404);
-      response.write('Not found!')
-    } else {
-      response.write(data)
-    }
-    response.end();
-  })
-};
+app.use(express.static(__dirname + "/public"));
 
-http.createServer(onRequest).listen(1337);
+app.get('/', (request, response, next) => {
+  response.sendFile(__dirname + "/index.html");
+});
+
+app.listen(1337, () => {
+  console.log('Listening on port 1337!');
+});

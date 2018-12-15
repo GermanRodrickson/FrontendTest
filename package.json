@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/GermanRodrickson/FrontendTest/issues"
   },
-  "homepage": "https://github.com/GermanRodrickson/FrontendTest#readme"
+  "homepage": "https://github.com/GermanRodrickson/FrontendTest#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
