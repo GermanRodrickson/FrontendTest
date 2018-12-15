@@ -115,7 +115,7 @@ input[type=submit] {
   width: 15px;
   height: 15px;
   display: inline-block;
-  margin-right: 5px;
+  padding: 0px 5px;
 }
 
 #repo-name {
