@@ -80,7 +80,7 @@ input[type=submit] {
 
 
 #repositories {
-  height: 170px;
+  height: 200px;
   overflow-x: scroll;
 }
 
