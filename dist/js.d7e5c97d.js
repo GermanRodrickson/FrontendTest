@@ -151,7 +151,7 @@ function fetchData(value) {
       var reponame = repo.name;
       var stars = repo.stargazers_count;
       var fork = repo.forks;
-      return "<div class=\"repo\">\n            <p id=\"repo-name\">".concat(reponame, "</p>\n            <div class=\"starts-forks\">\n              <img src=\".img/star-solid.svg\" alt=\"star\"><p>").concat(stars, "</p>\n              <img src=\".public/img/code-branch-solid.svg\" alt=\"fork\"><p>").concat(fork, "</p>\n            </div>\n        </div>");
+      return "<div class=\"repo\">\n            <p id=\"repo-name\">".concat(reponame, "</p>\n            <div class=\"starts-forks\">\n              <img src=\"./img/star-solid.svg\" alt=\"star\"><p>").concat(stars, "</p>\n              <img src=\"./img/code-branch-solid.svg\" alt=\"fork\"><p>").concat(fork, "</p>\n            </div>\n        </div>");
     });
     var repositories = document.querySelector("#repositories");
     repositories.insertAdjacentHTML('beforeend', repos.join(''));
@@ -186,7 +186,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52571" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52778" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
